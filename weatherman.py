@@ -1,6 +1,6 @@
+
 import os
 import sys
-# import os.path
 
 
 def main():
@@ -19,12 +19,10 @@ def main():
         sys.exit(1)
     cur_dir = os.path.dirname(os.path.realpath(__file__))
     my_path = cur_dir+'/weatherfiles'
-    all_files = [f for f in os.listdir(my_path) if os.path.isfile(os.path.join(my_path, f)) and f.endswith('.txt')]
+    all_files = [f for f in os.listdir(my_path) if 
+    			os.path.isfile(os.path.join(my_path, f)) and 
+    			f.endswith('.txt')]
 
-    # for file in all_files:
 
-
-# dir_path = os.path.dirname(os.path.realpath(__file__))
-# print(dir_path)
 if __name__ == '__main__':
     main() 
